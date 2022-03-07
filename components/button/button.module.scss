@@ -1,0 +1,10 @@
+@import '../../styles/_variables.module.scss';
+
+.btn{
+  background-color: #fff;
+  border: 2px solid $primary-color;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 30px;
+  color: $primary-color;
+}
