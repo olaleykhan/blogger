@@ -1,3 +1,39 @@
+@import "../../styles/variables.module";
+
 .nav{
     display: flex;
+    align-items: center;
+        justify-content: space-between;
+        margin: 0px 10vw;
+    >.logo{
+        margin: 2rem;
+    }
+    >ul{
+        display: flex;
+        gap : var(--gap, 3rem); 
+        margin: 0;
+        @media (max-width: $screen-md){
+            position: fixed ;
+            inset: 0 0 0 50%;
+            flex-direction: column;
+            background-color: #639a30b9;
+            backdrop-filter: blur(10rem);
+            padding: min(30vh, 10rem) 2rem;
+            font-weight: 500;
+            color: #fff;
+            gap: 5em;
+        }
+
+        >li{
+            list-style: none;
+            font-size: 1.3rem;
+            a{
+                color: $primary-color;
+                    padding: 0 1rem 0.5rem 1rem;
+                &:hover{
+                    border-bottom: 2px solid $primary-color;
+                }
+            }
+        }
+    }
 }

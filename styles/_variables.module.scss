@@ -3,3 +3,10 @@ $primary-color: #639a30;
 :export{
   primaryColor:$primary-color;
 }
+
+// break points
+$screen-tab: 480px;
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1600px;
+$screen-xl: 2000px;
